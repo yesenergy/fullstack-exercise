@@ -18,4 +18,5 @@ from django.urls import path
 from . import views
 urlpatterns = [
     path('api/transactions', views.transactions, name='trans'),
+    path('api/summary', views.summary, name='summary'),
 ]
