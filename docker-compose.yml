@@ -5,7 +5,7 @@ services:
     image: postgres
   node:
     image: node
-    command: bash -c "cd /frontend/frontend && yarn && yarn start"
+    command: bash -c "cd /frontend/frontend && yarn --no-bin-links && ./node_modules/.bin/react-scripts start"
     volumes: 
       - .:/frontend
     ports:
