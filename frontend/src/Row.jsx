@@ -15,10 +15,10 @@ export const Row = ({ item }) => (
 			{item.hedgetype}
 		</div>
 		<div id="source" className="column">
-			{item.sourceid}
+			{item.sourcename}
 		</div>
 		<div id="sink" className="column">
-			{item.sinkid}
+			{item.sinkename}
 		</div>
 		<div id="size" className="column">
 			{item.contractsize}
